@@ -1,10 +1,10 @@
-import './App.css';
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css'
+import React, { Suspense } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-const DashboardPage = React.lazy(() => import('./pages/dashboard-page'));
+const DashboardPage = React.lazy(() => import('./pages/dashboard-page'))
 
-function App() {
+function App () {
   return (
     <Router>
       <Routes>
@@ -18,7 +18,7 @@ function App() {
           />
       </Routes>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
