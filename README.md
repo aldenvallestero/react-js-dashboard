@@ -9,3 +9,6 @@ ReactJS Dashboard is a widget-based concept which allow users to build their own
 ### 🏃 Run the application
 1. Run `npm install` to download dependencies.
 2. Run `npm start` to launch the web app.
+
+### 🔗 External Links / References
+- [Axios Test Support](https://github.com/axios/axios/issues/5101)
