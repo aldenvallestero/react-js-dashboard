@@ -51,7 +51,7 @@ const DashboardPage = () => {
   }, [])
 
   return (
-    <div className="container-fluid grid grid-cols-6 p-6">
+    <div className="container-fluid grid sm:grid-cols-2 md:grid-cols-6 p-6">
       {
         configs?.columns.map(col => (
           <div className={`col-span-${col.size} mx-4`}>
