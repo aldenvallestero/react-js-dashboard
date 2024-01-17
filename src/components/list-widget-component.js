@@ -1,17 +1,17 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 const ListWidget = ({ data }) => {
-  const [list, setList] = useState();
+  const [list, setList] = useState()
   useEffect(() => {
     axios({
       method: 'get',
-      url: data.api,
+      url: data.api
     })
       .then(result => {
-        setList(result.data.results);
-      });
-  }, []);
+        setList(result.data.results)
+      })
+  }, [])
 
   return (
     <div className="block shadow p-4 m-4 rounded-md border">
@@ -27,4 +27,4 @@ const ListWidget = ({ data }) => {
   )
 }
 
-export default ListWidget;
+export default ListWidget

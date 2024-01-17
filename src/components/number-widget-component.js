@@ -1,17 +1,17 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 const NumberWidget = ({ data }) => {
-  const [number, setNumber] = useState();
+  const [number, setNumber] = useState()
   useEffect(() => {
     axios({
       method: 'get',
-      url: data.api,
+      url: data.api
     })
       .then(result => {
         setNumber(result?.data?.pokemon_species_details?.length)
       })
-  });
+  })
 
   return (
     <div className="block shadow p-4 m-4 rounded-md border">
@@ -21,4 +21,4 @@ const NumberWidget = ({ data }) => {
   )
 }
 
-export default NumberWidget;
+export default NumberWidget
